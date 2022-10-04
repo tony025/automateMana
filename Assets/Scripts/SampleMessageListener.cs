@@ -8,6 +8,7 @@
 
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Events;
 
 /**
  * When creating your message listeners you need to implement these two methods:
@@ -16,13 +17,13 @@ using System.Collections;
  */
 public class SampleMessageListener : MonoBehaviour
 {
-
-
+    public UnityEvent carteScanner;
+    public string carteId;
     // Invoked when a line of data is received from the serial device.
     void OnMessageArrived(string msg)
     {
-        Debug.Log(msg);
-
+        carteId = msg;
+        carteScanner.Invoke();
     }
 
     // Invoked when a connect/disconnect event occurs. The parameter 'success'
