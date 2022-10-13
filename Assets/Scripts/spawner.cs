@@ -42,6 +42,18 @@ public class spawner : MonoBehaviour
             Debug.Log(carteIdSpawn + " N'EST PAS VALID!");
         }
 
+        switch (carteIdSpawn)
+        {
+            case " 13 FC 28 AD":
+                Instantiate(cube, transform.position, Quaternion.identity);
+                break;
+            case " 04 1E CE 62 10 02 89":
+                Instantiate(sphere, transform.position, Quaternion.identity);
+                break;
+            default:
+                Debug.Log(carteIdSpawn + " N'EST PAS VALID!");
+                break;
+        }
 
     }
 }

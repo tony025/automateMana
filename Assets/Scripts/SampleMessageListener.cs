@@ -23,7 +23,6 @@ public class SampleMessageListener : MonoBehaviour
     void OnMessageArrived(string msg)
     {
         carteId = msg;
-        Debug.Log(msg);
         carteScanner.Invoke();
     }
 
