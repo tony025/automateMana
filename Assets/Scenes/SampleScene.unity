@@ -187,6 +187,10 @@ PrefabInstance:
       value: COM3
       objectReference: {fileID: 0}
     - target: {fileID: 11442534, guid: a65acf0cbf56b80419f74ebf0bc845f4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442534, guid: a65acf0cbf56b80419f74ebf0bc845f4, type: 3}
       propertyPath: messageListener
       value: 
       objectReference: {fileID: 1028792368}
@@ -448,7 +452,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cube: {fileID: 8262406858990029535, guid: 5cac876f42ea722468f28ab77dd48107, type: 3}
-  bonId: 
   sphere: {fileID: 6749603207839674021, guid: 064f13b5de4e64c4386cc27aab3a092e, type: 3}
   carteIdSpawn: 
   messageSender: {fileID: 1028792369}
